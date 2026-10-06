@@ -1,0 +1,316 @@
+.contact{
+    background-image: url(image-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding:100px 50px;
+    text-align: center;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    width: 100%;
+    padding: 100px 8%;
+    background: #f7f8fa;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.contact-info .small-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.contact-info h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 18px 0;
+    color: #111;
+}
+
+.contact-info h2 span {
+    color: #6c5ce7;
+}
+
+.contact-info > p {
+    color: #777;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+
+/* Contact Details */
+
+.contact-details {
+    margin-top: 40px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111;
+    color: white;
+
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.detail h4 {
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+
+.detail p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORM BOX
+========================= */
+
+.form-box {
+    background: white;
+    padding: 40px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+.form-box h3 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    color: #111;
+}
+
+.form-box > p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+
+/* Input Row */
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* Input Group */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: #fafafa;
+
+    transition: 0.3s;
+}
+
+
+/* Focus Effect */
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+
+    border-color: #6c5ce7;
+
+    background: rgb(255, 255, 255);
+
+    box-shadow: 0 0 0 3px rgba(108,92,231,0.08);
+}
+
+
+/* Textarea */
+
+.input-group textarea {
+    resize: none;
+}
+
+
+/* Checkbox */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+    color: #777;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #777;
+}
+
+.checkbox input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox input:checked {
+    background: #6c5ce7;
+    border-color: #6c5ce7;
+}
+
+.checkbox input:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.form-box button {
+
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #111;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-box button span {
+    font-size: 20px;
+}
+
+.form-box button:hover {
+    background: #6c5ce7;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-info h2 {
+        font-size: 38px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 70px 5%;
+    }
+
+    .form-box {
+        padding: 25px;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-info h2 {
+        font-size: 32px;
+    }
+}
